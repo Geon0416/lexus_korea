@@ -1,0 +1,399 @@
+@charset "utf-8";
+@media screen and (min-width:1025px) {
+  /* main 슬라이드 영역 서식 */
+      .swiper {width:100%;height:100%;position:relative;}
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 850px;
+        object-fit: cover;
+      }
+      /* 메인슬라이스 공통서식 */
+      .slide_text{
+        position:absolute;top:20%;left:15%;
+      }
+      /* 메인슬라이스 1번영역 */
+      .text_con{
+        font-size: 1.2rem;
+        padding:10px ;
+        margin-left: -90px;
+      }
+      .slide_btn{
+        width:120px; height:40px;
+        position:absolute;
+        top:30%; left:15%;
+        border:2px solid #2B3A03;
+      }
+      .slide_btn > a{
+        font-size: 1.2rem;line-height: 2.5rem;
+      }
+      .slide_text > .title01{
+        font-size: 2rem;
+        font-weight: bold;
+        color: #2B3A03;
+        text-align: left;
+      }
+      /* 메인슬라이스 2번영역 */
+      .slide_text > .title02{
+        font-size: 2rem;
+        line-height: 3rem;
+        font-weight: bold;
+        color: #fff;
+        text-align: left;
+      }      
+      .text_con02{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        padding:10px ;
+        text-align: left;
+        color:#fff;
+      }
+      .slide_btn02{
+        width:120px; height:40px;
+        position:absolute;
+        top:50%; left:15%;
+        border:2px solid #fff;
+      }
+      .slide_btn02 > a{
+        color:#fff;
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+      }
+      .slide_btn03{
+        width:120px; height:40px;
+        position:absolute;
+        top:35%; left:15%;
+        border:2px solid #fff;
+      }
+      .slide_btn03 > a{
+        color:#fff;
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+      }
+  /* main Model 슬라이드 영역 서식 */
+  #model_slide{
+    width:90%; height:810px;
+    position:relative;
+    margin:0 auto;
+  }
+  #model_slide > h2{
+    position:absolute;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color:#2B3A03;
+    margin:74px 0px 0px 4.5%;
+  }
+  #model_slide > .model_slide_wrapper{
+    position:absolute;
+    width: 100%; height:700px;
+    left:50%; top:130px;
+    transform: translateX(-50%);
+  }
+  .model_slide_wrapper > ul{
+    width:3500px;display: flex;
+  }
+  .model_slide_wrapper > ul > li{
+    width:20%; height:550px;
+    margin:50px 200px 0px 0px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0px 0px 21px 0px rgb(201, 200, 200,0.9);
+  }
+  .model_slide_wrapper > ul > li > img{
+    position:absolute;
+    width:80%;
+    left:10%; top:18%;
+  }
+  .model_slide_wrapper > ul > li >span{
+    position:absolute;
+    left:50%; top:60%;
+    transform: translate(-50%);
+    font-size: 2.2rem;
+    font-weight:600;
+    color: #485429;
+  }
+
+  /* model_slide 영역 정보 & 시승 버튼 */
+  .model_btn{
+    position:absolute;
+    display: flex;
+    width:280px;
+    justify-content: space-between;
+    left: 50%; top:75%;
+    transform: translate(-50%);
+  }
+  .model_btn > li{
+    width:130px; height:50px;
+    background: #96875E;
+  }
+  .model_btn > li > a{
+    display: block;
+    text-align: center;
+    font-size: 1.13rem;
+    line-height: 3rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color:#F0FAD8;
+  }
+  /* model_slide 페이지 내비게이션 서식*/
+  .model_slide_page_nav{
+    position: absolute;
+    width:100%;
+    bottom:10px;
+    text-align: center;
+  }
+  .model_control_btn{
+    display: inline-block;
+    width:15px; height:15px;
+    border-radius: 50px;
+    background: #F8EAC5;
+    margin-right: 10px;
+  }
+  .act{background: #2B3A03;}
+  /* lexus media 영역 서식 */
+  .lexus_media{
+    width:100%;position: relative;
+  }
+  .lexus_media > div{
+    width:80%;
+    display: flex;
+    margin: 80px auto;
+    justify-content: space-between;
+  }
+  /* lexus media의 동영상 영역 */
+  .lexus_mov{width:50%;}
+  .lexus_mov iframe{
+    width:100%; height:500px
+  }
+  .lexus_mov > span{
+    font-size: 1.13rem;
+    font-weight: 600;
+    color:#2B3A03;
+    line-height: 1.5rem;
+  }
+  .lexus_mov > h2{
+    margin-bottom: 40px;
+    font-size:2.25rem;
+    font-weight:bold;
+    letter-spacing: 6%;
+    color:#2B3A03;
+  }
+  /* lexus media의 news 영역 */
+  .lexus_news{width:45%;}
+  .lexus_news > h2{
+    margin: 32px 0px;
+    font-size: 2.25rem;
+    font-weight:bold;
+    letter-spacing:6%;
+    color:#2B3A03;
+  }
+  .lexus_news li{margin-bottom: 40px;}
+  .lexus_news i{
+    margin-right: 10px;
+    font-size:1.2rem;
+    color:#71804B;  
+  }
+  .lexus_news  a{
+    font-size: 1.12rem;
+    font-weight: 500;
+    letter-spacing:20%;
+    color: #3D341C;
+  }
+   /* 3. 탭콘텐츠 서식 */
+   .tab_con{background:#f1e9d4;}
+   .tab_con article{
+     width:80%;height:600px;
+     margin:0px auto;
+     background: no-repeat right;
+     background-size:45%;
+   }
+   .tab_con article > h2{padding:50px 0px 20px 0px;}
+   .tab_con_wrap{
+     display: flex;
+     padding-top:40px;
+     position:relative;
+   }
+   .tab_con_wrap > li{margin:0px 5px;}
+   .tab_con_wrap > li > a{
+     padding:10px;
+     font-weight: bold;
+     background:#ADCBE7;
+     color:#3D341C;font-size:17px;
+   }
+   .tab_con_wrap > li > a:hover{text-decoration:none;}
+   .tab_con h2{
+     font-size:32px;
+     font-weight:bold;
+     padding-bottom:20px;
+   }
+   .act02{background:#b5c491 !important;}
+   .tab_con_wrap dt{
+     font-size:24px;
+     font-weight:bold;
+     margin: 20px 0px 20px;
+   }
+   .tab_con_wrap dd{
+     font-size:18px;line-height:180%;
+   }
+   .cont{
+     position:absolute;
+     width:50%;left:20px;top:90px;
+     display:none;
+   }
+   .cont img{width:80%;}
+    /* 이벤트 슬라이드 서식 */
+    .event{
+      width:80%; 
+      margin:60px auto;
+      position: relative;
+    }
+    .event > h2{
+      font-size:2.2rem;
+      font-weight:bold;
+      color: #2B3A03;
+      padding-bottom:20px;
+    }
+    .e_slide{
+      position:relative;overflow: hidden;
+    }
+    .event i.fas{
+      position:absolute;
+      top:50%;
+      font-size: 40px;
+      padding:5px 13px;
+      border-radius:50%;
+      border:1px solid #333;
+      background: #fff;
+    }
+    .event > i.fa-angle-left{left:-55px;}
+    .event > i.fa-angle-right{right:-55px;}
+    .e_slide a{display:flex;}
+    .e_slide .e_txt{
+      padding:30px 0px 0px 40px;width:30%;
+    }
+    .e_txt span{
+      background:#ccc;
+      padding:5px 10px;
+      margin-bottom: 20px;
+    }
+    .e_txt h3{
+      font-size: 2rem;
+      line-height: 3rem;
+      color: #2B3A03;
+    }
+    .e_txt p{
+      font-size:1.2rem;
+      font-weight: 500;
+      line-height: 2rem;
+      color: #333;
+    }
+    .es_wrap{
+      width:300%;
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .es_wrap > div{width: 100%;}
+    .es_wrap > div > a >img{width:70%;}
+  /* 6. 스토리갤러리 */
+  .girl_story {
+    width: 80%;
+    margin: 80px auto;
+    padding: 0px 0px;
+  }
+  .title_story {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #2B3A03;
+    text-align: center;
+  }
+  .girl {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 270px 270px 270px;
+    padding: 20px;
+    grid-gap: 20px;
+    grid-template-areas:
+      "g01 g03 g04"
+      "g02 g03 g05"
+      "g06 g07 g08";
+  }
+  figure {overflow: hidden;}
+  figure:hover figcaption {
+    transform: translate(0px, -84px);
+  }
+  .girl figcaption {
+    height: 80px;
+    background-color: #111111;
+    position: relative;
+    transition: 0.5s;
+  }
+  figcaption h6 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ADCBE7;
+    padding: 10px 0px 5px 20px;
+  }
+  figcaption p {
+    font-size: 10px;
+    color: #fff;
+    padding: 5px 0px 0px 20px;
+  }
+  figcaption span {
+    border: 1px solid #fff;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+  }
+  .girl img {width: 100%;}
+  .girl figure:first-child {grid-area: g01;}
+  .girl figure:nth-child(2) {grid-area: g02;}
+  .girl figure:nth-child(3) {grid-area: g03;}
+  .girl figure:nth-child(4) {grid-area: g04;}
+  .girl figure:nth-child(5) {grid-area: g05;}
+  /* 모달서식 */
+.p_modal{
+  width:100%;height:100%;
+  background:rgba(0,0,0,.8);
+  position:fixed;top:0px;left:0px;
+  text-align:center;
+  z-index:99999;
+}
+.p_modal div{
+  max-width:600px;
+  position:absolute;
+  top:50%;left:50%;
+  transform:translate(-50%, -50%);
+}
+.p_modal .banner{}
+.p_modal .banner label{ 
+  color:#fff;
+  font-size:13px;
+  line-height:30px;
+}
+#ch{
+  position: absolute;
+  bottom:1%;
+  left: 24%;
+}
+.p_modal input[type=checkbox]+label{
+  display: inline-block;
+  margin-right:100px;
+}
+.p_modal a{
+  padding:4px 8px;
+  font-size:13px;
+}
+}

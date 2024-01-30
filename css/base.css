@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/* 기본서식 */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+a{color:#3D341C; text-decoration: none;}
+ul{list-style: none;}
+.none{display: none;}

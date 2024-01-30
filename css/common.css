@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+@media screen and (min-width:1025px) {
+    /* 헤더 영역 서식 */
+    header{
+        width:100%; height:60px;
+        position: relative;
+        background:#C7DCEF;
+        z-index: 100;
+    }
+
+    /* 헤더 로고 서식 */
+    header > h1{
+        position:absolute;
+        margin:12px 34px;
+    }
+    header > h1 > img{
+        width:180px; height:40px;  
+    }
+
+    /* 헤더 내비게이션 서식 */
+    header > .navi{
+        width:1000px;
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top:10px;
+        left:25%;
+    }
+    header > .navi > li{
+        position: relative;
+    }
+    /* 헤더 내비게이션 1Depths 서식 */
+    header > .navi > li > a{
+        font-size: 1.2rem;
+        font-weight:bold;
+        color:#685318;
+        line-height:50px;
+    }
+    header > .navi > li:hover > ul{
+        display: block;
+    }
+    .sub{
+        position: absolute;
+        display: none;
+        width:120px;
+        background: #c3c9b3;
+        padding: 20px;
+        left:-30px;
+    }
+
+    .sub > li{
+        margin-top:20px;
+        text-align:center;
+    }
+    .sub > li > a{
+        font-size: 1rem;
+        font-weight: 600;
+        padding-top:40px;
+    }
+    .sub > li > a:hover{
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    /* 상단 헤더 장바구니 & 로그인서식 */
+    .my_page{
+        width:80px;
+        position:absolute;
+        display: flex;
+        justify-content: space-between;
+        right:5%;
+        margin-top:26px;
+    }
+    .my_page > li > a > i{
+        font-size: 1.5rem;
+    }
+
+    /* footer 영역 서식 */
+    footer{
+        position: relative;
+        width: 100%; height:250px;
+        background: #222;
+    }
+    footer > h1{
+        position:absolute;
+        margin:20px 0px 0px 10%;
+        left: 8%;
+    }
+    footer > h1 > a > img{
+        width: 150%;
+    }
+/* footer 중간 정보메뉴 영역 서식 */
+    .footer_infor{
+        position: absolute;
+        width: 65%;
+        left: 65%; top:5%;
+        transform: translate(-50%);
+        letter-spacing: 2px;
+        font-weight: 400;
+    }
+    .footer_mnu{
+        width: 60%;
+        display: flex;
+        margin-top: 80px;
+    }
+    .footer_mnu > li:first-child{
+        margin-left: -10px !important;
+    }
+    .footer_infor > ul >li{
+        color:#fff;
+        font-size: 0.815rem;
+        margin-bottom: 10px;
+    }
+    .footer_infor > span{
+        color: #fff;
+        font-weight: bold;
+    }
+    .footer_infor > span{ font-size: 0.8rem;}
+    .footer_mnu > li > a{
+        color: #fff;
+        margin: 10px;
+    }
+/* footer 중간 정보메뉴 전화번호 영역 서식  */
+    .tel_num{display: flex;}
+    .tel_num > li{margin-right: 20px;}
+    .tel_num > li >a{color:#fff;}
+/* footer 중간 정보메뉴 company_infor 영역 서식 */
+    .company_infor {display: flex;}
+    .company_infor > li{margin-right:20px;}
+
+/* footer sns 영역 */
+    .footer_link{width: 50%;} 
+    .footer_link > .footer_sns{
+        width:15%;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        right:18%; top:90px;
+    }
+    .footer_sns > li{}
+    .footer_sns > li{}
+    .footer_sns > li > a > i{
+        font-size: 1.2rem;
+        color: #fff;
+    }
+    select{
+        position: absolute;
+        width:15%;
+        height:30px;
+        margin-top:10px;
+        border-radius:5px;
+        top:120px; right:18%;
+    }
+}
